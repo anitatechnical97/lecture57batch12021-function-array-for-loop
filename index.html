@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+        </style>
+        <script>
+            // 1.  Function definition is one time process.
+
+                function myFunction(x,y) {      //  x and y are formal argument/parameter
+                    // Function body
+                    // function may return something.
+                    return x+y;
+                }
+
+            // 2.  Function calling is many tiem process.
+
+            /*
+             aisa block of code jise hm reuse kr sakte h use function khte h.
+
+             agr function k phle = h means function kuchh n kuchh return kr rha h jise hm kisi 
+             variable me store krte h, jisk liye is function me z variable use kiya h.
+
+            */
+                var z = myFunction(10,20);              //  10 and 20 are actual parameter/arguments  // myFunction() is a user defined function.
+                console.log(z);
+                let a = myFunction(50,20);
+                console.log(a);
+                alert(a);                               //   Function calling.  // alert is a predefined function
+
+
+                /*******
+
+                There are two types of function.
+                 1. Predefined function (jis function ko hm kvl call krte h define krne ki 
+                     jarurat nhi hoti use predefine function khte h.)
+
+                 2. User defined function
+                
+                *********/
+
+                /********
+
+                Function calling k time actual argument me hm 3 chij pass kr skte h.
+                1. Integer
+                2. String
+                3. Function call within function. It is also called as function nested calling.
+                   (function call k time hm function k andar hi function call krte h.)
+                
+                **********/
+
+                var b = myFunction(10,myFunction(20,30)); 
+                alert(b);
+
+        </script>
+    </head>
+    <body>
+        <script>
+            
+        </script>
+    </body>
+</html>

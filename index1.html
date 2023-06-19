@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+        </style>
+        <script>
+
+            /*
+            
+            (1). Variable can store one value at a time.
+            (2). Array can store more than 1 value at a time of same data type.
+            (3). Array are denoted by square bracket [].
+            (4). Syntax for array =>  
+                  var arrayName = [element1,element2,element3,..........];
+                  let arrayName = [member1,member2,member3,.............];
+                  const arrayName = [index0,index1,index2,.............];
+            (5). To fetch th data from array ->
+                   arrayName[indexnumber];      
+            
+            */
+
+            var students = ['Anita',"Ragini",`Mariyum`];
+
+            console.log("Hello "+students[0]+" How are you?");
+
+        //    alert("Hello "+students[1]+" How are you?");
+
+            function greet(m) {
+                console.log('Hello '+m+', How are you');
+            }
+
+            greet(students[2]);                 // 1st way to print data.
+
+
+            /*
+
+            (1) - When data are repeating and we have to print 
+                  those large of data then we use loop.
+            (2) - loop syntax :-
+                            for(initialization;condition;increment/decrement) 
+                            {
+
+                            }
+              
+            */
+
+            // 2nd way to print large data using for loop.
+
+            for(var i=0;i<=2;i++)               //  ++ -> increment operator,    -- -> decrement operator
+            {
+                greet(students[i]);
+            }
+
+
+
+            // 3rd way to print all data.
+
+            function greet2(s) {
+                for(var i=0;i<=2;i++){
+                    console.log('ggggHello'+s[i]+ 'How are you');
+                }
+            }
+            
+            greet2(students);                  // calling the funtion with array name as parameter.
+        </script>
+    </head>
+    <body>
+        <script>
+
+        </script>
+    </body>
+</html>
